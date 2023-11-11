@@ -1,0 +1,490 @@
+[
+    {
+      "id": "289",
+      "variavel": "Brasileiros natos",
+      "unidade": "Pessoas",
+      "resultados": [
+        {
+          "classificacoes": [
+            {
+              "id": "58",
+              "nome": "Grupo de idade",
+              "categoria": { "0": "Total" }
+            },
+            {
+              "id": "303",
+              "nome": "Unidade da federação de nascimento",
+              "categoria": { "0": "Total" }
+            }
+          ],
+          "series": [
+            {
+              "localidade": {
+                "id": "4",
+                "nivel": { "id": "N2", "nome": "Grande Região" },
+                "nome": "Sul"
+              },
+              "serie": { "2010": "27284608" }
+            }
+          ]
+        },
+        {
+          "classificacoes": [
+            {
+              "id": "58",
+              "nome": "Grupo de idade",
+              "categoria": { "1140": "0 a 4 anos" }
+            },
+            {
+              "id": "303",
+              "nome": "Unidade da federação de nascimento",
+              "categoria": { "0": "Total" }
+            }
+          ],
+          "series": [
+            {
+              "localidade": {
+                "id": "4",
+                "nivel": { "id": "N2", "nome": "Grande Região" },
+                "nome": "Sul"
+              },
+              "serie": { "2010": "1759540" }
+            }
+          ]
+        },
+        {
+          "classificacoes": [
+            {
+              "id": "58",
+              "nome": "Grupo de idade",
+              "categoria": { "1141": "5 a 9 anos" }
+            },
+            {
+              "id": "303",
+              "nome": "Unidade da federação de nascimento",
+              "categoria": { "0": "Total" }
+            }
+          ],
+          "series": [
+            {
+              "localidade": {
+                "id": "4",
+                "nivel": { "id": "N2", "nome": "Grande Região" },
+                "nome": "Sul"
+              },
+              "serie": { "2010": "1923933" }
+            }
+          ]
+        },
+        {
+          "classificacoes": [
+            {
+              "id": "58",
+              "nome": "Grupo de idade",
+              "categoria": { "1142": "10 a 14 anos" }
+            },
+            {
+              "id": "303",
+              "nome": "Unidade da federação de nascimento",
+              "categoria": { "0": "Total" }
+            }
+          ],
+          "series": [
+            {
+              "localidade": {
+                "id": "4",
+                "nivel": { "id": "N2", "nome": "Grande Região" },
+                "nome": "Sul"
+              },
+              "serie": { "2010": "2284465" }
+            }
+          ]
+        },
+        {
+          "classificacoes": [
+            {
+              "id": "58",
+              "nome": "Grupo de idade",
+              "categoria": { "1143": "15 a 19 anos" }
+            },
+            {
+              "id": "303",
+              "nome": "Unidade da federação de nascimento",
+              "categoria": { "0": "Total" }
+            }
+          ],
+          "series": [
+            {
+              "localidade": {
+                "id": "4",
+                "nivel": { "id": "N2", "nome": "Grande Região" },
+                "nome": "Sul"
+              },
+              "serie": { "2010": "2342328" }
+            }
+          ]
+        },
+        {
+          "classificacoes": [
+            {
+              "id": "58",
+              "nome": "Grupo de idade",
+              "categoria": { "2792": "15 a 17 anos" }
+            },
+            {
+              "id": "303",
+              "nome": "Unidade da federação de nascimento",
+              "categoria": { "0": "Total" }
+            }
+          ],
+          "series": [
+            {
+              "localidade": {
+                "id": "4",
+                "nivel": { "id": "N2", "nome": "Grande Região" },
+                "nome": "Sul"
+              },
+              "serie": { "2010": "1419888" }
+            }
+          ]
+        },
+        {
+          "classificacoes": [
+            {
+              "id": "58",
+              "nome": "Grupo de idade",
+              "categoria": { "2793": "18 a 19 anos" }
+            },
+            {
+              "id": "303",
+              "nome": "Unidade da federação de nascimento",
+              "categoria": { "0": "Total" }
+            }
+          ],
+          "series": [
+            {
+              "localidade": {
+                "id": "4",
+                "nivel": { "id": "N2", "nome": "Grande Região" },
+                "nome": "Sul"
+              },
+              "serie": { "2010": "922441" }
+            }
+          ]
+        },
+        {
+          "classificacoes": [
+            {
+              "id": "58",
+              "nome": "Grupo de idade",
+              "categoria": { "1144": "20 a 24 anos" }
+            },
+            {
+              "id": "303",
+              "nome": "Unidade da federação de nascimento",
+              "categoria": { "0": "Total" }
+            }
+          ],
+          "series": [
+            {
+              "localidade": {
+                "id": "4",
+                "nivel": { "id": "N2", "nome": "Grande Região" },
+                "nome": "Sul"
+              },
+              "serie": { "2010": "2331959" }
+            }
+          ]
+        },
+        {
+          "classificacoes": [
+            {
+              "id": "58",
+              "nome": "Grupo de idade",
+              "categoria": { "1145": "25 a 29 anos" }
+            },
+            {
+              "id": "303",
+              "nome": "Unidade da federação de nascimento",
+              "categoria": { "0": "Total" }
+            }
+          ],
+          "series": [
+            {
+              "localidade": {
+                "id": "4",
+                "nivel": { "id": "N2", "nome": "Grande Região" },
+                "nome": "Sul"
+              },
+              "serie": { "2010": "2334187" }
+            }
+          ]
+        },
+        {
+          "classificacoes": [
+            {
+              "id": "58",
+              "nome": "Grupo de idade",
+              "categoria": { "1146": "30 a 34 anos" }
+            },
+            {
+              "id": "303",
+              "nome": "Unidade da federação de nascimento",
+              "categoria": { "0": "Total" }
+            }
+          ],
+          "series": [
+            {
+              "localidade": {
+                "id": "4",
+                "nivel": { "id": "N2", "nome": "Grande Região" },
+                "nome": "Sul"
+              },
+              "serie": { "2010": "2148543" }
+            }
+          ]
+        },
+        {
+          "classificacoes": [
+            {
+              "id": "58",
+              "nome": "Grupo de idade",
+              "categoria": { "1147": "35 a 39 anos" }
+            },
+            {
+              "id": "303",
+              "nome": "Unidade da federação de nascimento",
+              "categoria": { "0": "Total" }
+            }
+          ],
+          "series": [
+            {
+              "localidade": {
+                "id": "4",
+                "nivel": { "id": "N2", "nome": "Grande Região" },
+                "nome": "Sul"
+              },
+              "serie": { "2010": "1996265" }
+            }
+          ]
+        },
+        {
+          "classificacoes": [
+            {
+              "id": "58",
+              "nome": "Grupo de idade",
+              "categoria": { "1148": "40 a 44 anos" }
+            },
+            {
+              "id": "303",
+              "nome": "Unidade da federação de nascimento",
+              "categoria": { "0": "Total" }
+            }
+          ],
+          "series": [
+            {
+              "localidade": {
+                "id": "4",
+                "nivel": { "id": "N2", "nome": "Grande Região" },
+                "nome": "Sul"
+              },
+              "serie": { "2010": "1984986" }
+            }
+          ]
+        },
+        {
+          "classificacoes": [
+            {
+              "id": "58",
+              "nome": "Grupo de idade",
+              "categoria": { "1149": "45 a 49 anos" }
+            },
+            {
+              "id": "303",
+              "nome": "Unidade da federação de nascimento",
+              "categoria": { "0": "Total" }
+            }
+          ],
+          "series": [
+            {
+              "localidade": {
+                "id": "4",
+                "nivel": { "id": "N2", "nome": "Grande Região" },
+                "nome": "Sul"
+              },
+              "serie": { "2010": "1908739" }
+            }
+          ]
+        },
+        {
+          "classificacoes": [
+            {
+              "id": "58",
+              "nome": "Grupo de idade",
+              "categoria": { "1150": "50 a 54 anos" }
+            },
+            {
+              "id": "303",
+              "nome": "Unidade da federação de nascimento",
+              "categoria": { "0": "Total" }
+            }
+          ],
+          "series": [
+            {
+              "localidade": {
+                "id": "4",
+                "nivel": { "id": "N2", "nome": "Grande Região" },
+                "nome": "Sul"
+              },
+              "serie": { "2010": "1649124" }
+            }
+          ]
+        },
+        {
+          "classificacoes": [
+            {
+              "id": "58",
+              "nome": "Grupo de idade",
+              "categoria": { "1151": "55 a 59 anos" }
+            },
+            {
+              "id": "303",
+              "nome": "Unidade da federação de nascimento",
+              "categoria": { "0": "Total" }
+            }
+          ],
+          "series": [
+            {
+              "localidade": {
+                "id": "4",
+                "nivel": { "id": "N2", "nome": "Grande Região" },
+                "nome": "Sul"
+              },
+              "serie": { "2010": "1361773" }
+            }
+          ]
+        },
+        {
+          "classificacoes": [
+            {
+              "id": "58",
+              "nome": "Grupo de idade",
+              "categoria": { "1152": "60 a 64 anos" }
+            },
+            {
+              "id": "303",
+              "nome": "Unidade da federação de nascimento",
+              "categoria": { "0": "Total" }
+            }
+          ],
+          "series": [
+            {
+              "localidade": {
+                "id": "4",
+                "nivel": { "id": "N2", "nome": "Grande Região" },
+                "nome": "Sul"
+              },
+              "serie": { "2010": "1061900" }
+            }
+          ]
+        },
+        {
+          "classificacoes": [
+            {
+              "id": "58",
+              "nome": "Grupo de idade",
+              "categoria": { "1153": "65 a 69 anos" }
+            },
+            {
+              "id": "303",
+              "nome": "Unidade da federação de nascimento",
+              "categoria": { "0": "Total" }
+            }
+          ],
+          "series": [
+            {
+              "localidade": {
+                "id": "4",
+                "nivel": { "id": "N2", "nome": "Grande Região" },
+                "nome": "Sul"
+              },
+              "serie": { "2010": "783176" }
+            }
+          ]
+        },
+        {
+          "classificacoes": [
+            {
+              "id": "58",
+              "nome": "Grupo de idade",
+              "categoria": { "1154": "70 a 74 anos" }
+            },
+            {
+              "id": "303",
+              "nome": "Unidade da federação de nascimento",
+              "categoria": { "0": "Total" }
+            }
+          ],
+          "series": [
+            {
+              "localidade": {
+                "id": "4",
+                "nivel": { "id": "N2", "nome": "Grande Região" },
+                "nome": "Sul"
+              },
+              "serie": { "2010": "589360" }
+            }
+          ]
+        },
+        {
+          "classificacoes": [
+            {
+              "id": "58",
+              "nome": "Grupo de idade",
+              "categoria": { "1155": "75 a 79 anos" }
+            },
+            {
+              "id": "303",
+              "nome": "Unidade da federação de nascimento",
+              "categoria": { "0": "Total" }
+            }
+          ],
+          "series": [
+            {
+              "localidade": {
+                "id": "4",
+                "nivel": { "id": "N2", "nome": "Grande Região" },
+                "nome": "Sul"
+              },
+              "serie": { "2010": "406218" }
+            }
+          ]
+        },
+        {
+          "classificacoes": [
+            {
+              "id": "58",
+              "nome": "Grupo de idade",
+              "categoria": { "2503": "80 anos ou mais" }
+            },
+            {
+              "id": "303",
+              "nome": "Unidade da federação de nascimento",
+              "categoria": { "0": "Total" }
+            }
+          ],
+          "series": [
+            {
+              "localidade": {
+                "id": "4",
+                "nivel": { "id": "N2", "nome": "Grande Região" },
+                "nome": "Sul"
+              },
+              "serie": { "2010": "418111" }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+  
