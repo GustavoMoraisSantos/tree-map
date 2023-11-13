@@ -1,4 +1,4 @@
-import api from "./axiosconfig";
+import api from "./axiosConfig";
 
 export const fetchRegionalData = async (region) => {
   try {
