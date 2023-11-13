@@ -1,3 +1,5 @@
+## Live preview: https://tree-map-git-master-gustavomoraissantos.vercel.app/ 
+
 # React TreeMap - IBGE Data
 
 This project is a simple TreeMap built with React, showcasing age groups distribution across different regions of Brazil. It communicates with the IBGE API to fetch data and visualize it in an interactive way.
