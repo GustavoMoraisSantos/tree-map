@@ -31,13 +31,6 @@ export default function App() {
         width: "100%",
       };
   
-      const groupStyle = {
-        flex: "1",
-        margin: "2px",
-        backgroundColor: "lightblue",
-        padding:"4px"
-      };
-  
       const normalize = (value, min, max) => {
         return ((value - min) / (max - min)) * 100;
       };
@@ -46,29 +39,50 @@ export default function App() {
       const minSerie = Math.min(...serieValues);
       const maxSerie = Math.max(...serieValues);
   
+      const getColor = (value) => {
+        const percent = normalize(value, minSerie, maxSerie);
+  
+        const colors = [
+          "#AED3E3",
+          "#86BEDA",
+          "#009DCF",
+          "#008DC0",
+          "#007AA2",
+          "#006A89",
+          "#003B57",
+        ];
+  
+        const colorIndex = Math.floor(percent / (100 / (colors.length - 1)));
+        return colors[colorIndex];
+      };
+  
       return (
         <div style={containerStyle}>
           {newData &&
-            newData.map((group, index) => (
-              <div
-                key={index}
-                style={{
-                  ...groupStyle,
-                  flexBasis: `${normalize(
-                    group.series[0].serie[2010],
-                    minSerie,
-                    maxSerie
-                  )}%`,
-                }}
-              >
-                <div>{Object.values(group.classificacoes[0].categoria).join(", ")}</div>
-                <div>Quantidade: {group.series[0].serie[2010]}</div>
-              </div>
-            ))}
+            newData.map((group, index) => {
+              const value = group.series[0].serie[2010];
+              return (
+                <div
+                  key={index}
+                  className="treemap-item"
+                  style={{
+                    flex: "1",
+                    margin: "2px",
+                    backgroundColor: getColor(value),
+                    padding: "4px",
+                    flexBasis: `${normalize(value, minSerie, maxSerie)}%`,
+                  }}
+                >
+                  <div>{Object.values(group.classificacoes[0].categoria).join(", ")}</div>
+                  <div>Quantidade: {value}</div>
+                </div>
+              );
+            })}
         </div>
       );
     }
   };
+  
 
   const containerStyle = {
     background: "whitesmoke",
@@ -103,6 +117,9 @@ export default function App() {
         }
         * {
           box-sizing: border-box;
+        }
+        .treemap-item:hover {
+          box-shadow: 0 0 10px rgba(0, 0, 0, 1.5);
         }
       `}</style>
     </div>
