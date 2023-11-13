@@ -84,7 +84,7 @@ export default function App() {
         <title>Tree map</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <TopMenu totalizer={treeData[0].series[0].serie[2010]} onRegionChange={handleRegionChange} />
+      <TopMenu totalizer={treeData && treeData[0].series[0].serie[2010]} onRegionChange={handleRegionChange} />
 
       <main>
         <div style={containerStyle}>
