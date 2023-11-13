@@ -1,8 +1,13 @@
 .menu {
-    background-color: #adaaaa;
-    padding: 10px;
-    display: flex;
-    justify-content: space-around;
-    color: rgb(233, 0, 0);
-    width: 100%;
+  background-color: #eeeded;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  color: #030303;
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .menu {
+    flex-direction: column; 
   }
+}
