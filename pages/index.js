@@ -1,14 +1,13 @@
-// pages/index.js
 import React, { useEffect, useState } from "react";
 import Head from "next/head";
 import TopMenu from "../components/menu/TopMenu";
 import { fetchRegionalData } from "../services/externalApi";
 
-export default function Home() {
+export default function App() {
   const [selectedRegion, setSelectedRegion] = useState("1");
+  const [treeData, setTreeData] = useState();
 
   const handleRegionChange = (value) => {
-    console.log('Região selecionada:', value);
     setSelectedRegion(value);
   };
 
@@ -18,59 +17,57 @@ export default function Home() {
     // 3 - Sudeste
     // 4 - Sul
     // 5 - Centro-Oeste
-    fetchRegionalData(selectedRegion);
+    fetchRegionalData(selectedRegion).then((response) => {
+      setTreeData(response.resultados);
+    });
   }, [selectedRegion]);
 
-  const treeData = {
-    name: "group",
-    children: [
-      { name: "grupo 1", value: 603 },
-      { name: "grupo 2", value: 330 },
-      { name: "grupo 3", value: 1 },
-      { name: "grupo 4", value: 34 },
-      { name: "grupo 5", value: 34 },
-      { name: "grupo 6", value: 100 },
-      { name: "grupo 7", value: 34 },
-      { name: "grupo 8", value: 47 },
-      { name: "grupo 9", value: 75 },
-      { name: "grupo 10", value: 47 },
-      { name: "grupo 11", value: 47 },
-      { name: "grupo 12", value: 47 },
-      { name: "grupo 13", value: 47 },
-      { name: "grupo 14", value: 45 },
-      { name: "grupo 15", value: 47 },
-      { name: "grupo 16", value: 50 },
-      { name: "grupo 17", value: 50 },
-      { name: "grupo 18", value: 99 },
-      { name: "grupo 19", value: 47 },
-    ],
-  };
-
-  const Treemap = ({ data }) => {
-    const containerStyle = {
-      display: "flex",
-      flexWrap: "wrap",
-      width: "100%",
-    };
-
-    const groupStyle = {
-      flex: "1",
-      margin: "2px",
-      backgroundColor: "lightblue",
-    };
-
-    return (
-      <div style={containerStyle}>
-        {data.children.map((group, index) => (
-          <div
-            key={index}
-            style={{ ...groupStyle, flexBasis: `${group.value}%` }}
-          >
-            {group.name}
-          </div>
-        ))}
-      </div>
-    );
+  const Treemap = (data) => {
+    if (data.data) {
+      const newData = data.data.slice(1);
+      const containerStyle = {
+        display: "flex",
+        flexWrap: "wrap",
+        width: "100%",
+      };
+  
+      const groupStyle = {
+        flex: "1",
+        margin: "2px",
+        backgroundColor: "lightblue",
+        padding:"4px"
+      };
+  
+      const normalize = (value, min, max) => {
+        return ((value - min) / (max - min)) * 100;
+      };
+  
+      const serieValues = newData.map((group) => group.series[0].serie[2010]);
+      const minSerie = Math.min(...serieValues);
+      const maxSerie = Math.max(...serieValues);
+  
+      return (
+        <div style={containerStyle}>
+          {newData &&
+            newData.map((group, index) => (
+              <div
+                key={index}
+                style={{
+                  ...groupStyle,
+                  flexBasis: `${normalize(
+                    group.series[0].serie[2010],
+                    minSerie,
+                    maxSerie
+                  )}%`,
+                }}
+              >
+                <div>{Object.values(group.classificacoes[0].categoria).join(", ")}</div>
+                <div>Quantidade: {group.series[0].serie[2010]}</div>
+              </div>
+            ))}
+        </div>
+      );
+    }
   };
 
   const containerStyle = {
@@ -87,7 +84,7 @@ export default function Home() {
         <title>Tree map</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <TopMenu onRegionChange={handleRegionChange} />
+      <TopMenu totalizer={treeData[0].series[0].serie[2010]} onRegionChange={handleRegionChange} />
 
       <main>
         <div style={containerStyle}>
